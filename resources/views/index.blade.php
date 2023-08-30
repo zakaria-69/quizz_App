@@ -86,7 +86,7 @@
                     <label for="score">Score:</label>
                     <input type="text" name="score" id="score" required>
                 </div>
-                <div> <button type="submit">Commencer</button></div>
+                <div> <button type="submit">Commencer</button></div> 
             </form>
         </div>
 
