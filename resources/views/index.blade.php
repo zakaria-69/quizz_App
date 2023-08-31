@@ -18,7 +18,8 @@
 
         <div class="card-body">
 
-            <form action="{{ route('quizz.store') }}" method="post">
+            <form action="{{ route('quiz') }}" method="post">
+                @csrf
                 <div>
                     <label for="username">Username:</label>
                     <input type="text" name="username" id="username" required>
@@ -82,10 +83,6 @@
                     <Date type="date" name="date" id="date" required>
                 </div>
 
-                <div>
-                    <label for="score">Score:</label>
-                    <input type="text" name="score" id="score" required>
-                </div>
                 <div> <button type="submit">Commencer</button></div>
             </form>
         </div>

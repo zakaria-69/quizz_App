@@ -15,6 +15,6 @@ use App\Http\Controllers\QuizzController;
 */
 
 Route::get('/', [QuizzController::class, 'index'])->name('index');
-Route::get('/quiz', [QuizzController::class, 'quiz'])->name('quiz');
+Route::post('/quiz', [QuizzController::class, 'quiz'])->name('quiz');
 Route::get('/result', [QuizzController::class, 'result'])->name('result');
 Route::get('/scores', [QuizzController::class, 'scores'])->name('scores');

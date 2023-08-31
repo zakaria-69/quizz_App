@@ -17,9 +17,9 @@ class QuizzController extends Controller
         $client = new Client(['verify' => false]);
         $response = $client->get('https://opentdb.com/api.php?amount=10&type=multiple');
         $data = json_decode($response->getBody(), true);
-
+        
         $questions = $data['results'];
-
+        
         return view('quiz', compact('questions'));
     }
 }
