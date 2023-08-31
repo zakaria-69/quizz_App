@@ -22,4 +22,8 @@ Route::get('/', function () {
 Route::get('/quizz',[QuizzController::class,'index']);
 
 //route index Results quizz
-Route::get('/quiz/results',[ResultsController::class,'index']); 
+Route::get('/quizz/results',[ResultsController::class,'index']); 
+
+
+//Route Quizz 
+Route::get('/quizz/question',[QuizzQuestionController::class,'index']);
