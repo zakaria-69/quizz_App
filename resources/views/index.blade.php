@@ -18,7 +18,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('quizzs.store') }}" method="post">
+            <form action="{{ route('quizz.store') }}" method="post">
                 <div>
                     <label for="username">Username:</label>
                     <input type="text" name="username" id="username" required>
@@ -86,7 +86,7 @@
                     <label for="score">Score:</label>
                     <input type="text" name="score" id="score" required>
                 </div>
-                <div> <button type="submit">Commencer</button></div> 
+                <div> <button type="submit">Commencer</button></div>
             </form>
         </div>
 
